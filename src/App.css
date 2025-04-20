@@ -1,0 +1,73 @@
+@media (prefers-reduced-motion: no-preference) {
+  .App-logo {
+    animation: App-logo-spin infinite 20s linear;
+  }
+}
+
+@keyframes App-logo-spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+.header-container{
+  display:flex;
+  flex-direction: row;
+  width:max-content;
+  margin-left: 10%;
+  margin-top:30px;
+ 
+  position: relative;
+  z-index: 1;
+  color:white;
+}
+
+.menu-bar{
+  display: flex;
+  justify-content: space-between;
+  padding-left: 10%;
+  gap:100px;
+  color:white;    
+}
+.menu-bar ul{
+  display: flex;
+  list-style: none;
+  gap: 80px;
+}
+.menu-bar a{
+  text-decoration: none;
+  color:white;
+}
+
+.menu-bar a:hover{
+  text-decoration: underline;
+}
+
+.video-bg{
+  position: absolute;
+   background-Color: rgba(0, 0, 0, 0.4);
+  width: 100%;
+  height:100%;
+  object-fit: cover;
+  top:0;
+  left: 0;
+  z-index: -1;
+  filter:brightness(0.5);
+}
+
+.overlay{
+  position: absolute;
+  object-fit: cover;
+  top:0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.4);
+  /* z-index: 1; */
+}
+
+
+
